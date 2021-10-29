@@ -11,25 +11,60 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 
-    <body>
-        <h1>
-            This is my <span>frontend cheat sheet</span>!
+    <body style="background-color:darkseagreen">
+        <h1 style="text-align: center;">
+            My frontend cheat sheet
         </h1>
 
-        <p>
-            I will fill it in as we learn new things!
+        <p style="text-align: center;">
+            (I will fill it in as we learn new things!)
         </p>
 
-        <h1>HTML</h1>
+        <h1>1. HTML</h1>
+
+        <p>
+            Even though our code will least of all consist of HTML, we can't have a web page without it. ^^ <br>
+            We need to tell browsers what kind of document they will be loading, and give it some kind of structure...
+        </p>
         <h2>Basic HTML document structure</h2>
+
+        <p>
+            This part is the "skeleton" of our code, and it looks like this:
+        </p>
+        
         <pre>
-            &lt;!doctype html&gt;
-            <html>
-            <head></head>
-            <body>
-                Lorem ipsum
-            </body>
-            </html>
+
+            &lt;!DOCTYPE html&gt;
+             &lt;html&gt;
+              &lt;head&gt;
+               <i>(We name it here, and it doesn't show on our page. You can put a <b>title</b> in here, and that will be the tab name. Yay!)</i>
+              &lt;/head&gt;
+                &lt;body&gt;
+                 <b>Some kind of text.</b> <i>(This is what will be shown on the page. Definitely. Unless you hide it somehow. But why would you do that?)</i>
+                &lt;/body&gt;
+             &lt;/html&gt;
+        </pre>
+
+        
+        We can form segments of text either by typing it as a <b>paragraph</b>, or make a <b>block</b> of it by turning it into a &lt;div&gt;. <br>
+        <br> Like this:
+        
+
+        <pre>
+        &lt;p&gt;
+            Lots of text here. Probably useless, but still fun. At least to someone. You never know who might be reading your page. 
+            It could be your cat. You think they're harmless, but believe me, they will rule the world at some point. 
+            You can see it in their eyes. The determination. Or it could just be hunger. Who knows.
+        &lt;/p&gt;
+        </pre>
+        Or...
+        <pre style="background: lightgrey;">
+            
+        &lt;div&gt;
+            Lots of text here. Probably useless, but still fun. At least to someone. You never know who might be reading your page. 
+            It could be your cat. You think they're harmless, but believe me, they will rule the world at some point. 
+            You can see it in their eyes. The determination. Or it could just be hunger. Who knows.
+        &lt;/div&gt;
         </pre>
 
     </body>

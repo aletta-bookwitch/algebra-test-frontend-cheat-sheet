@@ -201,7 +201,7 @@
 
         <br><br><br>
 
-        We can also "draw" using the right code:
+        We can also "draw" using svg (scalable vector graphics):
 
         <br>
 
@@ -213,7 +213,13 @@
 
         &lt;svg width="100" height="100"&gt; <br>
         &ensp; &lt;ellipse cx="50" cy="50" rx="30" ry="15" stroke="red" fill="green" stroke-width="3"/&gt; <br>
-        &lt;/svg&gt;        
+        &lt;/svg&gt;
+
+        <br>
+
+        <svg height="210" width="500">
+            <polygon points="200,10 250,190 160,210" style="fill:lime;stroke:purple;stroke-width:1" />
+          </svg> 
 
         <br>
 
@@ -275,41 +281,43 @@
 
         <table border="1">
 
+            <caption>Hogwarts first-year students' requirements</caption>
+
             <tr>
-                <th>Product name</th>
+                <th>Item</th>
                 <th>Quantity</th>
             </tr>
 
             <tr>
-                <td>Green tea</td>
-                <td>1 box</td>
+                <td>Plain work robes (Black)</td>
+                <td>3 sets</td>
             </tr>
 
             <tr>
-                <td>Black tea</td>
-                <td>3 boxes</td>
+                <td>Pointed Hat (Black) for day wear</td>
+                <td>1</td>
             </tr>
 
             <tr>
-                <td>Rooibos tea</td>
-                <td>10 boxes</td>
+                <td>Protective Gloves (dragon hide or similar)</td>
+                <td>1 pair</td>
             </tr>
 
             <tr>
-                <td>Oolong tea</td>
-                <td>5 boxes</td>
+                <td>Winter Cloak (Black, silver fastenings)</td>
+                <td>1</td>
             </tr>
 
         </table>
 
         <br><br>
-
-        Ravenclaw 1st year classes
-
+      
         <table title="Ravenclaw 1st year classes" border="1">
 
+            <caption>Ravenclaw 1st year classes</caption>
+
             <tr>
-                <th>Time/Period</th>
+                <th>Period</th>
                 <th>Monday</th>
                 <th>Tuesday</th>
                 <th>Wednesday</th>
@@ -372,6 +380,8 @@
 
         <table border="1">
 
+            <caption>Practice table</caption>
+
             <tr>
                 <td colspan="4">&ensp; &ensp; &ensp; &ensp;</td>              
             </tr>
@@ -408,8 +418,8 @@
         <h4>Search via Ecosia</h4>
 
         <form action="https://www.ecosia.org/search" method="get">
-            <label>Search:</label>
-            <input type="text" name="q">
+            <label for="q">Search:</label>
+            <input id="q" type="text" name="q">
             <button>Go!</button>
         </form>
 
@@ -434,6 +444,96 @@
         </form>
 
         <br><br>
+
+        <h3>Login form</h3>
+
+        <form action="">
+
+            <input type="email" name="Email" placeholder="Email" required><br>
+            <input type="password" name="Password" placeholder="Password" required><br>
+            <button type="submit">Sign in</button>
+
+        </form>
+
+        <br>
+
+        <h3>Age gate form</h3>
+
+        <form action="">
+
+            <select name="date" id="date">
+                <option value="" disabled selected>Day</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+            </select>
+
+
+            <select name="month" id="month">
+                <option value="" disabled selected>Month</option>
+                <option value="1">Januaryy</option>
+                <option value="2">February</option>
+                <option value="3">March</option>
+                <option value="4">April</option>
+                <option value="5">May</option>
+                <option value="6">June</option>
+                <option value="7">July</option>
+                <option value="8">August</option>
+                <option value="9">September</option>
+                <option value="10">October</option>
+                <option value="11">November</option>
+                <option value="12">December</option>
+            </select>
+
+            <select name="year" id="year">
+                <option value="" disabled selected>Year</option>
+                <option value="2021">2021</option>
+                <option value="2020">2020</option>
+                <option value="2019">2019</option>
+                <option value="2018">2018</option>
+                <option value="2017">2017</option>
+                <option value="2016">2016</option>
+                <option value="2015">2015</option>
+                <option value="2014">2014</option>
+                <option value="2013">2013</option>
+                <option value="2012">2012</option>
+                <option value="2011">2011</option>
+
+            </select>
+
+            <button type="submit">Let me in!</button>
+
+        </form>
+
+        <br>
 
         <a href="#">Go to top</a>
 

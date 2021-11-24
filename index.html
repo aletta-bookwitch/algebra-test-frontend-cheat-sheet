@@ -588,6 +588,43 @@
 
         <br><br>
 
+        <h3>Food order form</h3>
+
+        <form action="">
+
+            <label>Full name:<input type="text" name="full_name" id="full_name" placeholder="Your full name here" required></label> <br>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" placeholder="Enter phone number" name="phone"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            required> <br>            
+            <label>Address:<input type="text" name="address" id="address" placeholder="Street and number" required></label> <br>
+            <label for="delivery-time">Choose delivery time:</label>
+                <input type="datetime-local" id="meeting-time"
+                name="meeting-time" value="2021-11-24T19:15"
+                min="2021-11-24T19:15" max="2021-11-24T22:00">
+                <br> 
+                
+            <label>Contactless delivery<input type="radio" name="contactless_delivery" id="contactless_delivery" value="check"></label><br>
+            
+            <input id="food-recommendation-list" type="text" name="food-recommendation-list" list="foods" >
+            <button>Submit order</button>
+
+            <datalist id="foods">
+
+                <option value="Raspberry pie">
+                <option value="Coconut ice cream">
+                <option value="Chocolate cake">
+                <option value="Hazelnut ice cream cup">
+                <option value="Hot cocoa">
+                <option value="Vanilla pudding">
+                <option value="Lava cake">
+
+            </datalist>
+
+        </form>
+
+        <br><br>
+
         <h1 id="css">2. CSS</h1>
 
         <img src="./images/CSS3_logo_and_wordmark.svg.png" alt="CSS logo" height="100">

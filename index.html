@@ -590,23 +590,29 @@
 
         <h3>Food order form</h3>
 
+        <br>
+
         <form action="">
 
-            <label>Full name:<input type="text" name="full_name" id="full_name" placeholder="Your full name here" required></label> <br>
-            <label for="phone">Phone:</label>
+            <label>Full name:<input type="text" name="full_name" id="full_name" placeholder="Your full name here" required></label> <br><br>
+
+            <label for="phone">Phone:</label>            
             <input type="tel" id="phone" placeholder="Enter phone number" name="phone"
             pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
-            required> <br>            
-            <label>Address:<input type="text" name="address" id="address" placeholder="Street and number" required></label> <br>
+            required> <br><br>
+
+            <label>Address:<input type="text" name="address" id="address" placeholder="Street and number" required></label> <br><br>       
+
             <label for="delivery-time">Choose delivery time:</label>
-                <input type="datetime-local" id="meeting-time"
-                name="meeting-time" value="2021-11-24T19:15"
-                min="2021-11-24T19:15" max="2021-11-24T22:00">
-                <br> 
-                
-            <label>Contactless delivery<input type="radio" name="contactless_delivery" id="contactless_delivery" value="check"></label><br>
+                <input type="time" id="delivery-time" name="delivery-time"
+                 min="09:00" max="22:00" required>
+                <br><br>   
             
-            <input id="food-recommendation-list" type="text" name="food-recommendation-list" list="foods" >
+            <label>Your choice:<input id="food-recommendation-list" type="text" name="food-recommendation-list" list="foods" ></label><br><br>
+            <label>Extras:<input id="extras" type="text" name="extras" list="extras"></label><br><br>
+
+            <label>Contactless delivery<input type="radio" name="contactless_delivery" id="contactless_delivery" value="check"></label><br><br>            
+
             <button>Submit order</button>
 
             <datalist id="foods">
@@ -621,7 +627,19 @@
 
             </datalist>
 
+            <datalist id="extras">
+
+                <option value="Chocolate syrup">
+                <option value="Strawberry syrup">
+                <option value="Caramel syrup">
+
+            </datalist>
+
         </form>
+
+        <br>
+
+        <a href="#">Go to top</a>
 
         <br><br>
 

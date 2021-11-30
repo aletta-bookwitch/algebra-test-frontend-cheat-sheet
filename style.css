@@ -1,0 +1,45 @@
+body {
+    background-color: darkseagreen;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: darkslategray;
+}
+
+h1 {
+    color: white;
+    text-shadow: 2px 2px darkslategray;                
+}
+
+h2 {
+    color: lightgoldenrodyellow;
+    text-shadow: 2px 2px darkslategray;
+}
+
+table, th, td {
+    border-color: lightgoldenrodyellow;
+    border-width: 1,1,1,1;
+    border-style: inset;                
+}
+
+a:link {
+    color: darkslategray;
+}
+
+a:visited {
+    color: forestgreen;
+}
+
+div.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;                
+    padding: 10px;
+    font-size: 20px;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}

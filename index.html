@@ -11,155 +11,114 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">"
-        <style>
-            body {
-                background-color: darkseagreen;
-                font-family:'Montserrat', sans-serif;
-                font-weight: bold;
-                color: darkslategray;
-            }
-
-            h1 {
-                color: white;
-                text-shadow: 2px 2px darkslategray;                
-            }
-
-            h2 {
-                color: lightgoldenrodyellow;
-                text-shadow: 2px 2px darkslategray;
-            }
-
-            table, th, td {
-                border-color: lightgoldenrodyellow;
-                border-width: 1,1,1,1;
-                border-style: inset;                
-            }
-
-            a:link {
-                color: darkslategray;
-            }
-
-            a:visited {
-                color: forestgreen;
-            }
-
-            div.sticky {
-                position: -webkit-sticky;
-                position: sticky;
-                top: 0;                
-                padding: 20px;
-                font-size: 20px;
-            }
-            
-        </style>
-
-        <link href="prism.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href="prism.css" rel="stylesheet"> 
+        <link href="style.css" rel="stylesheet">
 
     </head>
 
     <body>
+        <div class="wrapper">
         
-        <a href="./about.html">About me</a>
+            <a href="./about.html">About me</a>
 
-        &ensp; 
-        
-        <a href="./contact.html">Contact me</a>
-
-        &ensp;
-
-        <a href="./table.html">Table of stuff</a>
-
-        &ensp;
-
-        <a href="./cookbook-example/apple-pie.html">Cookbook</a>
-
-        <br><br>
-
-        <div class="sticky">
-        
-            <h1 style="text-align: center;">
-                My frontend cheat sheet
-            </h1>
-
-            <div>
-                <img 
-                    src="https://user-images.githubusercontent.com/71838352/139461087-ab8f2ecf-135b-4e4f-8df6-17ef346be5d1.png"
-                    alt="Baby Kurama"
-                    style="display: block; margin: 0 auto"
-                />
-            </div>
-        </div>
-
-        <p style="text-align: center;">
-            (I will fill it in as we learn new things!)
-        </p>
-
-        <p style="text-align: center; font-size: medium;">
-            Visit my <a href="https://github.com/aletta-bookwitch" target="_blank">GitHub profile</a>.
-        </p>
-        
-        <br>
-
-        
-
-                
-        <ol  style="text-align: center;";>
-            <li><a href="#html">HTML</a></li>
-            <li><a href="#inline-text">Inline text</a></li>
-            <li><a href="#lists-section">Lists</a></li>
-            <li><a href="#image-section">Images</a></li>
-            <li><a href="#audio-section">Audio</a></li>
-            <li><a href="#video-section">Video</a></li>
-            <li><a href="#tables-section">Tables</a></li>
-            <li><a href="#forms">Forms</a></li>
-            <li><a href="#css">CSS</a></li>
-            <li><a href="#javascript">JavaScript</a></li>
+            &ensp; 
             
-        </ol>
+            <a href="./contact.html">Contact me</a>
 
-        <h1 id="html">1. HTML</h1>
+            &ensp;
 
-        <img src="./images/html.png" alt="HTML5 logo" height="100">
+            <a href="./table.html">Table of stuff</a>
 
-        <p>
-            Even though our code will least of all consist of HTML, we can't have a web page without it. ^^ <br>
-            We need to tell browsers what kind of document they will be loading, and give it some kind of structure...
-        </p>
+            &ensp;
 
-        What is HTML?
+            <a href="./cookbook-example/apple-pie.html">Cookbook</a>
 
-        <ul>
-            <li>HTML stands for Hyper Text Markup Language.</li>
-            <li>HTML is the standard markup language for creating Web pages.</li>
-            <li>HTML describes the structure of a Web page.</li>
-            <li>HTML elements tell the browser how to display the content.</li>
-        </ul>
-        <h2>Basic HTML document structure</h2>
+            <br><br>
 
-        To create a HTML we need to define the following:
+            <div class="sticky">
+            
+                <h1 style="text-align: center;">
+                    My frontend cheat sheet
+                </h1>
 
-        <ol>
-            <li>The type of document (HTML).</li>
-            <li>The "head" of the document.</li>
-            <li>The "body" of the document.</li>
-        </ol>
+            </div>
 
-        HTML consists of elements such as:
+                <div>
+                    <img 
+                        src="https://user-images.githubusercontent.com/71838352/139461087-ab8f2ecf-135b-4e4f-8df6-17ef346be5d1.png"
+                        alt="Baby Kurama"
+                        style="display: block; margin: 0 auto"
+                    />
+                </div>            
 
-        <ul>
-            <li>Heading (&lt;h1&gt; &lt;/h1&gt;, &lt;h2&gt; &lt;/h2&gt;, etc.)</li>
-            <li>Paragraph (&lt;p&gt; &lt;/p&gt;)</li>
-            <li>Empty element (&lt;br&gt;) </li>
-        </ul>
+            <p style="text-align: center;">
+                (I will fill it in as we learn new things!)
+            </p>
 
-        <p>
-            This part is the "skeleton" of our code, and it looks like this:
-        </p>
-        
-        <pre>
-            <code class="language-html">
+            <p style="text-align: center; font-size: medium;">
+                Visit my <a href="https://github.com/aletta-bookwitch" target="_blank">GitHub profile</a>.
+            </p>
+            
+            <br>
 
+            
+
+                    
+            <ol  style="text-align: center;";>
+                <li><a href="#html">HTML</a></li>
+                <li><a href="#inline-text">Inline text</a></li>
+                <li><a href="#lists-section">Lists</a></li>
+                <li><a href="#image-section">Images</a></li>
+                <li><a href="#audio-section">Audio</a></li>
+                <li><a href="#video-section">Video</a></li>
+                <li><a href="#tables-section">Tables</a></li>
+                <li><a href="#forms">Forms</a></li>
+                <li><a href="#css">CSS</a></li>
+                <li><a href="#javascript">JavaScript</a></li>
+                
+            </ol>
+
+            <h1 id="html">1. HTML</h1>
+
+            <img src="./images/html.png" alt="HTML5 logo" height="100">
+
+            <p>
+                Even though our code will least of all consist of HTML, we can't have a web page without it. ^^ <br>
+                We need to tell browsers what kind of document they will be loading, and give it some kind of structure...
+            </p>
+
+            What is HTML?
+
+            <ul>
+                <li>HTML stands for Hyper Text Markup Language.</li>
+                <li>HTML is the standard markup language for creating Web pages.</li>
+                <li>HTML describes the structure of a Web page.</li>
+                <li>HTML elements tell the browser how to display the content.</li>
+            </ul>
+            <h2>Basic HTML document structure</h2>
+
+            To create a HTML we need to define the following:
+
+            <ol>
+                <li>The type of document (HTML).</li>
+                <li>The "head" of the document.</li>
+                <li>The "body" of the document.</li>
+            </ol>
+
+            HTML consists of elements such as:
+
+            <ul>
+                <li>Heading (&lt;h1&gt; &lt;/h1&gt;, &lt;h2&gt; &lt;/h2&gt;, etc.)</li>
+                <li>Paragraph (&lt;p&gt; &lt;/p&gt;)</li>
+                <li>Empty element (&lt;br&gt;) </li>
+            </ul>
+
+            <p>
+                This part is the "skeleton" of our code, and it looks like this:
+            </p>
+            
+            <pre><code class="language-html">
                 &lt;!DOCTYPE html&gt;
                 &lt;html&gt;
                     &lt;head&gt;
@@ -169,561 +128,563 @@
                     <b>Some kind of text.</b> <i>(This is what will be shown on the page. Definitely. Unless you hide it somehow. But why would you do that?)</i>
                     &lt;/body&gt;
                 &lt;/html&gt;
-            </code>
-        </pre>
+                </code>
+            </pre>
 
-        
-        We can form segments of text either by typing it as a <b>paragraph</b>, or make a <b>block</b> of it by turning it into a &lt;div&gt;. <br>
-        <br> Like this:
-        
-
-        <pre>
-        &lt;p&gt;
-            Lots of text here. Probably useless, but still fun. At least to someone. You never know who might be reading your page. 
-            It could be your cat. You think they're harmless, but believe me, they will rule the world at some point. 
-            You can see it in their eyes. The determination. Or it could just be hunger. Who knows.
-        &lt;/p&gt;
-        </pre>
-        Or...
-        <pre style="background: lightgrey;">
             
-        &lt;div&gt;
-            Lots of text here. Probably useless, but still fun. At least to someone. You never know who might be reading your page. 
-            It could be your cat. You think they're harmless, but believe me, they will rule the world at some point. 
-            You can see it in their eyes. The determination. Or it could just be hunger. Who knows.
-        &lt;/div&gt;
-        </pre>
+            We can form segments of text either by typing it as a <b>paragraph</b>, or make a <b>block</b> of it by turning it into a &lt;div&gt;. <br>
+            <br> Like this:
+            
 
-        <br>
+            <pre>
+            &lt;p&gt;
+                Lots of text here. Probably useless, but still fun. At least to someone. You never know who might be reading your page. 
+                It could be your cat. You think they're harmless, but believe me, they will rule the world at some point. 
+                You can see it in their eyes. The determination. Or it could just be hunger. Who knows.
+            &lt;/p&gt;
+            </pre>
+            Or...
+            <pre>
+                
+            &lt;div&gt;
+                Lots of text here. Probably useless, but still fun. At least to someone. You never know who might be reading your page. 
+                It could be your cat. You think they're harmless, but believe me, they will rule the world at some point. 
+                You can see it in their eyes. The determination. Or it could just be hunger. Who knows.
+            &lt;/div&gt;
+            </pre>
 
-        <a href="#">Go to top</a>
+            <br>
 
-        <br>
-       
-        <h2 id="inline-text">Inline text elements</h2>
+            <a href="#">Go to top</a>
 
-        <p><strong>This is important.</strong> This is not, <em>but it can be useful</em>.</p>
-
-        <br>
-
-        &lt;p&gt; &lt;strong&gt;This is important.&lt;/strong&gt; This is not, &lt;em&gt;but it can be useful&lt;/em&gt;.&lt;/p&gt;
-
-        <br><br>
-
-        <a href="#">Go to top</a>
-
-        <br>
-
-        <h2 id="lists-section">Lists</h2>
-
-        We can make unordered, ordered, and description lists. <br><br>
-
-        This is an unordered list.
-        <ul>
-            <li>This is one segment in a list.</li>
-            <li>This is another segment in a list.</li>
-            <li>This is another segment in a list.</li>
-        </ul>
-
-        <br>
-
-        &lt;ul&gt; <br>
-        &ensp; &lt;li>This is one segment in a list.&lt;/li&gt; <br>
-        &ensp; &lt;li>This is another segment in a list.&lt;/li&gt; <br>
-        &ensp; &lt;li>This is another segment in a list.&lt;/li&gt; <br>
-        &lt;/ul&gt;
-
-        <br><br>
-
-        This is an ordered list.
-
-        <ol>
-            <li>This is the first segment in a list.</li>
-            <li>This is the second segment in a list.</li>
-            <li>This is the third segment in a list.</li>
-        </ol>
-
-        <br>
-
-        &lt;ol&gt; <br>
-        &ensp; &lt;li>This is the first segment in a list.&lt;/li&gt; <br>
-        &ensp; &lt;li>This is the second segment in a list.&lt;/li&gt; <br>
-        &ensp; &lt;li>This is the third segment in a list.&lt;/li&gt; <br>
-        &lt;/ol&gt;
-
-        <br><br>
-
-        This is a description list. <br>
-
-        <dl>
-            <dt>strong</dt>
-            <dd>Used for important text.</dd>
-            <dt>em</dt>
-            <dd>Used for good-to-know text.</dd>
-            <dt>small</dt>
-            <dd>Used for footer text.</dd>
-        </dl>
-
-        <br>
-
-        <a href="#">Go to top</a>
-
-        <br>
+            <br>
         
-        <h2 id="image-section">Images</h2>
+            <h2 id="inline-text">Inline text elements</h2>
 
-        <br>
+            <p><strong>This is important.</strong> This is not, <em>but it can be useful</em>.</p>
 
-        We can insert images which are also links to other pages.
+            <br>
 
-        <br><br>
+            &lt;p&gt; &lt;strong&gt;This is important.&lt;/strong&gt; This is not, &lt;em&gt;but it can be useful&lt;/em&gt;.&lt;/p&gt;
 
-        <a href="https://www.youtube.com/watch?v=uHKfrz65KSU" target="_blank"><img src="./images/cute-kitty.gif" alt="Tiny cute-kitty" height="100"></a>
+            <br><br>
 
-        <br>
+            <a href="#">Go to top</a>
 
-        &lt;a href="https://www.youtube.com/watch?v=uHKfrz65KSU" target="_blank"&gt; &lt;img src="./images/cute-kitty.gif" alt="Tiny cute-kitty" height="100"&gt; &lt;/a&gt;
+            <br>
 
-        <br><br><br>
+            <h2 id="lists-section">Lists</h2>
 
-        We can also "draw" using svg (scalable vector graphics):
+            We can make unordered, ordered, and description lists. <br><br>
 
-        <br>
+            This is an unordered list.
+            <ul>
+                <li>This is one segment in a list.</li>
+                <li>This is another segment in a list.</li>
+                <li>This is another segment in a list.</li>
+            </ul>
 
-        <svg width="100" height="100">
-            <ellipse cx="50" cy="50" rx="30" ry="15" stroke="red" fill="green" stroke-width="3"/>
-        </svg>
+            <br>
 
-        <br>
+            &lt;ul&gt; <br>
+            &ensp; &lt;li>This is one segment in a list.&lt;/li&gt; <br>
+            &ensp; &lt;li>This is another segment in a list.&lt;/li&gt; <br>
+            &ensp; &lt;li>This is another segment in a list.&lt;/li&gt; <br>
+            &lt;/ul&gt;
 
-        &lt;svg width="100" height="100"&gt; <br>
-        &ensp; &lt;ellipse cx="50" cy="50" rx="30" ry="15" stroke="red" fill="green" stroke-width="3"/&gt; <br>
-        &lt;/svg&gt;
+            <br><br>
 
-        <br>
+            This is an ordered list.
 
-        <svg width="200" height="200">
-            <rect x="50" y="50" width="130" height="130" stroke="black" fill="black" stroke-width="1"/>
-            <circle cx="115" cy="115" r="32.5" stroke="red" fill="white" stroke-width="3"/>
-        </svg>
+            <ol>
+                <li>This is the first segment in a list.</li>
+                <li>This is the second segment in a list.</li>
+                <li>This is the third segment in a list.</li>
+            </ol>
 
-        <br>
+            <br>
 
-        &lt;svg width="200" height="200"&gt; <br>
-        &ensp; &lt;rect x="50" y="50" width="130" height="130" stroke="black" fill="black" stroke-width="1"/&gt; <br>
-        &ensp; &lt;circle cx="115" cy="115" r="32.5" stroke="red" fill="white" stroke-width="3"/&gt; <br>
-        &lt;/svg&gt;
+            &lt;ol&gt; <br>
+            &ensp; &lt;li>This is the first segment in a list.&lt;/li&gt; <br>
+            &ensp; &lt;li>This is the second segment in a list.&lt;/li&gt; <br>
+            &ensp; &lt;li>This is the third segment in a list.&lt;/li&gt; <br>
+            &lt;/ol&gt;
 
-        <br><br>
+            <br><br>
 
-        <a href="#">Go to top</a>
+            This is a description list. <br>
 
-        <br>
+            <dl>
+                <dt>strong</dt>
+                <dd>Used for important text.</dd>
+                <dt>em</dt>
+                <dd>Used for good-to-know text.</dd>
+                <dt>small</dt>
+                <dd>Used for footer text.</dd>
+            </dl>
 
-        <h2 id="audio-section">Audio</h2>
+            <br>
 
-        <audio controls>
-            <source src="./audio/music.wav">
-        </audio>
+            <a href="#">Go to top</a>
 
-        <br><br>
+            <br>
+            
+            <h2 id="image-section">Images</h2>
 
-        &lt;audio controls&gt; <br>
-        &ensp; &lt;source src="./audio/music.wav"&gt; <br>
-        &lt;/audio&gt;
+            <br>
 
-        <br><br>
+            We can insert images which are also links to other pages.
 
-        <a href="#">Go to top</a>
+            <br><br>
 
-        <br>
+            <a href="https://www.youtube.com/watch?v=uHKfrz65KSU" target="_blank"><img src="./images/cute-kitty.gif" alt="Tiny cute-kitty" height="100"></a>
 
-        <h2 id="video-section">Video</h2>
+            <br>
 
-        <video height="250" controls>
-            <source src="./video/mountains.mp4">
-        </video>
+            &lt;a href="https://www.youtube.com/watch?v=uHKfrz65KSU" target="_blank"&gt; &lt;img src="./images/cute-kitty.gif" alt="Tiny cute-kitty" height="100"&gt; &lt;/a&gt;
 
-        <br><br>
+            <br><br><br>
 
-        &lt;video height="250" controls&gt; <br>
-        &lt;source src="./video/mountains.mp4"&gt; <br>
-        &lt;/video&gt;
+            We can also "draw" using svg (scalable vector graphics):
 
-        <br><br>
+            <br>
 
-        <a href="#">Go to top</a>
+            <svg width="100" height="100">
+                <ellipse cx="50" cy="50" rx="30" ry="15" stroke="red" fill="green" stroke-width="3"/>
+            </svg>
 
-        <br>
+            <br>
 
-        <h2 id="tables-section">Tables</h2>
+            &lt;svg width="100" height="100"&gt; <br>
+            &ensp; &lt;ellipse cx="50" cy="50" rx="30" ry="15" stroke="red" fill="green" stroke-width="3"/&gt; <br>
+            &lt;/svg&gt;
 
-        <table>
+            <br>
 
-            <caption>Hogwarts first-year students' requirements</caption>
+            <svg width="200" height="200">
+                <rect x="50" y="50" width="130" height="130" stroke="black" fill="black" stroke-width="1"/>
+                <circle cx="115" cy="115" r="32.5" stroke="red" fill="white" stroke-width="3"/>
+            </svg>
 
-            <tr>
-                <th>Item</th>
-                <th>Quantity</th>
-            </tr>
+            <br>
 
-            <tr>
-                <td>Plain work robes (Black)</td>
-                <td>3 sets</td>
-            </tr>
-
-            <tr>
-                <td>Pointed Hat (Black) for day wear</td>
-                <td>1</td>
-            </tr>
-
-            <tr>
-                <td>Protective Gloves (dragon hide or similar)</td>
-                <td>1 pair</td>
-            </tr>
-
-            <tr>
-                <td>Winter Cloak (Black, silver fastenings)</td>
-                <td>1</td>
-            </tr>
-
-        </table>
-
-        <br><br>
-      
-        <table title="Ravenclaw 1st year classes">
-
-            <caption>Ravenclaw 1st year classes</caption>
-
-            <tr>
-                <th>Period</th>
-                <th>Monday</th>
-                <th>Tuesday</th>
-                <th>Wednesday</th>
-                <th>Thursday</th>
-                <th>Friday</th>
-            </tr>
-
-            <tr>
-                <td>1</td>
-                <td colspan="5">Morning yoga</td>                
-            </tr>
-
-            <tr>
-                <td>2</td>
-                <td>Potions</td>
-                <td>Flying lessons</td>
-                <td rowspan="2">Charms</td>
-                <td>Astronomy</td>
-                <td>Palm reading</td>
-            </tr>
-
-            <tr>
-                <td>3</td>
-                <td rowspan="2">Quidditch</td>
-                <td>DADA</td>                
-                <td>Magical beasts</td>
-                <td>History of Magic</td>
-            </tr>
-
-            <tr>
-                <td>4</td>                
-                <td>Herbology</td>
-                <td>Transfiguration</td>
-                <td>Alchemy</td>
-                <td>History of Magic</td>
-            </tr>
-
-            <tr>
-                <td>5</td>
-                <td>Runes</td>
-                <td>Muggle studies</td>
-                <td>Magical Beasts</td>
-                <td>Potions</td>
-                <td>Flying lessons</td>
-            </tr>
-
-            <tr>
-                <td>6</td>
-                <td>Apparition</td>
-                <td>Herbology</td>
-                <td>Runes</td>
-                <td>Arithmancy</td>
-                <td>DADA</td>
-            </tr>
-
-
-        </table>
-
-        <br>
-
-        <table>
-
-            <caption>Practice table</caption>
-
-            <tr>
-                <td colspan="4">&ensp; &ensp; &ensp; &ensp;</td>              
-            </tr>
-    
-            <tr>
-                <td colspan="2">&ensp; &ensp; &ensp; &ensp;</td>
-                <td colspan="2">&ensp; &ensp; &ensp; &ensp;</td>                      
-            </tr>
-    
-            <tr>
-                <td>&ensp; &ensp; &ensp; &ensp;</td>
-                <td colspan="2">&ensp; &ensp; &ensp; &ensp;</td>
-                <td>&ensp; &ensp; &ensp; &ensp;</td>
-            </tr>
-    
-            <tr>
-                <td>&ensp; &ensp; &ensp; &ensp;</td>
-                <td>&ensp; &ensp; &ensp; &ensp;</td>
-                <td>&ensp; &ensp; &ensp; &ensp;</td>
-                <td>&ensp; &ensp; &ensp; &ensp;</td>
-            </tr>
-    
-        </table>
-
-        <br>
-
-        <a href="#">Go to top</a>
-
-        <br><br>
-
-
-        <h2 id="forms">Forms</h2>
-    
-        <h3>Search form</h3>
-
-        <br>
-
-        <h4>Search via Ecosia</h4>
-
-        <form action="https://www.ecosia.org/search" method="get">
-            <label for="q">Search:</label>
-            <input id="q" type="text" name="q">
-            <button>Go!</button>
-        </form>
-
-        <br>
-
-        <h4>Search via Google</h4>
-
-        <form action="https://www.google.com/search" method="get">
-            <label>Search:</label>
-            <input type="text" name="q">
-            <button>Go!</button>
-        </form>
-
-        <br>
-
-        <h4>Search via Yahoo!</h4>
-
-        <form action="https://uk.search.yahoo.com/search" method="get">
-            <label>Search:</label>
-            <input type="text" name="q">
-            <button>Go!</button>
-        </form>
-
-        <br><br>
-
-        <h3>Login form</h3>
-
-        <form action="">
-
-            <input type="email" name="Email" placeholder="Email" required><br>
-            <input type="password" name="Password" placeholder="Password" required><br>
-            <button type="submit">Sign in</button>
-
-        </form>
-
-        <br>
-
-        <h3>Age gate form</h3>
-
-        <form action="">
-
-            <select name="date" id="date">
-                <option value="" disabled selected>Day</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-                <option value="11">11</option>
-                <option value="12">12</option>
-                <option value="13">13</option>
-                <option value="14">14</option>
-                <option value="15">15</option>
-                <option value="16">16</option>
-                <option value="17">17</option>
-                <option value="18">18</option>
-                <option value="19">19</option>
-                <option value="20">20</option>
-                <option value="21">21</option>
-                <option value="22">22</option>
-                <option value="23">23</option>
-                <option value="24">24</option>
-                <option value="25">25</option>
-                <option value="26">26</option>
-                <option value="27">27</option>
-                <option value="28">28</option>
-                <option value="29">29</option>
-                <option value="30">30</option>
-                <option value="31">31</option>
-            </select>
-
-
-            <select name="month" id="month">
-                <option value="" disabled selected>Month</option>
-                <option value="1">Januaryy</option>
-                <option value="2">February</option>
-                <option value="3">March</option>
-                <option value="4">April</option>
-                <option value="5">May</option>
-                <option value="6">June</option>
-                <option value="7">July</option>
-                <option value="8">August</option>
-                <option value="9">September</option>
-                <option value="10">October</option>
-                <option value="11">November</option>
-                <option value="12">December</option>
-            </select>
-
-            <select name="year" id="year">
-                <option value="" disabled selected>Year</option>
-                <option value="2021">2021</option>
-                <option value="2020">2020</option>
-                <option value="2019">2019</option>
-                <option value="2018">2018</option>
-                <option value="2017">2017</option>
-                <option value="2016">2016</option>
-                <option value="2015">2015</option>
-                <option value="2014">2014</option>
-                <option value="2013">2013</option>
-                <option value="2012">2012</option>
-                <option value="2011">2011</option>
-
-            </select>
-
-            <button type="submit">Let me in!</button>
-
-        </form>
-
-        <br>
-
-        <h3>Survey form</h3>
-
-        <form action="">
-            <p>I'm good at using HTML. <br>
-            (1 - I completely agree, 5 - I completely disagree)</p>
-            <label><input type="radio" name="anwser" value="1">1</label>
-            <label><input type="radio" name="anwser" value="2">2</label>
-            <label><input type="radio" name="anwser" value="3">3</label>
-            <label><input type="radio" name="anwser" value="4">4</label>
-            <label><input type="radio" name="anwser" value="5">5</label>
-        </form>
-
-        <br>
-
-        <h3>Newsletter form</h3>
-
-        <form action="">
-            <p>Pick your newsletter topics</p>            
-            <label><input type="checkbox" name="newsletter_topic">Animals and plants</label><br>
-            <label><input type="checkbox" name="newsletter_topic">Rocks and minerals</label><br>
-            <label><input type="checkbox" name="newsletter_topic">People and places</label><br>
-            <label><input type="checkbox" name="newsletter_topic">Science and technology</label><br>
-            <label><input type="email" name="Email" placeholder="Email" required></label><br><br>
-            <button type="submit">Sign me up</button>
+            &lt;svg width="200" height="200"&gt; <br>
+            &ensp; &lt;rect x="50" y="50" width="130" height="130" stroke="black" fill="black" stroke-width="1"/&gt; <br>
+            &ensp; &lt;circle cx="115" cy="115" r="32.5" stroke="red" fill="white" stroke-width="3"/&gt; <br>
+            &lt;/svg&gt;
+
+            <br><br>
+
+            <a href="#">Go to top</a>
+
+            <br>
+
+            <h2 id="audio-section">Audio</h2>
+
+            <audio controls>
+                <source src="./audio/music.wav">
+            </audio>
+
+            <br><br>
+
+            &lt;audio controls&gt; <br>
+            &ensp; &lt;source src="./audio/music.wav"&gt; <br>
+            &lt;/audio&gt;
+
+            <br><br>
+
+            <a href="#">Go to top</a>
+
+            <br>
+
+            <h2 id="video-section">Video</h2>
+
+            <video height="250" controls>
+                <source src="./video/mountains.mp4">
+            </video>
+
+            <br><br>
+
+            &lt;video height="250" controls&gt; <br>
+            &lt;source src="./video/mountains.mp4"&gt; <br>
+            &lt;/video&gt;
+
+            <br><br>
+
+            <a href="#">Go to top</a>
+
+            <br>
+
+            <h2 id="tables-section">Tables</h2>
+
+            <table>
+
+                <caption>Hogwarts first-year students' requirements</caption>
+
+                <tr>
+                    <th>Item</th>
+                    <th>Quantity</th>
+                </tr>
+
+                <tr>
+                    <td>Plain work robes (Black)</td>
+                    <td>3 sets</td>
+                </tr>
+
+                <tr>
+                    <td>Pointed Hat (Black) for day wear</td>
+                    <td>1</td>
+                </tr>
+
+                <tr>
+                    <td>Protective Gloves (dragon hide or similar)</td>
+                    <td>1 pair</td>
+                </tr>
+
+                <tr>
+                    <td>Winter Cloak (Black, silver fastenings)</td>
+                    <td>1</td>
+                </tr>
+
+            </table>
+
+            <br><br>
+        
+            <table title="Ravenclaw 1st year classes">
+
+                <caption>Ravenclaw 1st year classes</caption>
+
+                <tr>
+                    <th>Period</th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                </tr>
+
+                <tr>
+                    <td>1</td>
+                    <td colspan="5">Morning yoga</td>                
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>Potions</td>
+                    <td>Flying lessons</td>
+                    <td rowspan="2">Charms</td>
+                    <td>Astronomy</td>
+                    <td>Palm reading</td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td rowspan="2">Quidditch</td>
+                    <td>DADA</td>                
+                    <td>Magical beasts</td>
+                    <td>History of Magic</td>
+                </tr>
+
+                <tr>
+                    <td>4</td>                
+                    <td>Herbology</td>
+                    <td>Transfiguration</td>
+                    <td>Alchemy</td>
+                    <td>History of Magic</td>
+                </tr>
+
+                <tr>
+                    <td>5</td>
+                    <td>Runes</td>
+                    <td>Muggle studies</td>
+                    <td>Magical Beasts</td>
+                    <td>Potions</td>
+                    <td>Flying lessons</td>
+                </tr>
+
+                <tr>
+                    <td>6</td>
+                    <td>Apparition</td>
+                    <td>Herbology</td>
+                    <td>Runes</td>
+                    <td>Arithmancy</td>
+                    <td>DADA</td>
+                </tr>
+
+
+            </table>
+
+            <br>
+
+            <table>
+
+                <caption>Practice table</caption>
+
+                <tr>
+                    <td colspan="4">&ensp; &ensp; &ensp; &ensp;</td>              
+                </tr>
+        
+                <tr>
+                    <td colspan="2">&ensp; &ensp; &ensp; &ensp;</td>
+                    <td colspan="2">&ensp; &ensp; &ensp; &ensp;</td>                      
+                </tr>
+        
+                <tr>
+                    <td>&ensp; &ensp; &ensp; &ensp;</td>
+                    <td colspan="2">&ensp; &ensp; &ensp; &ensp;</td>
+                    <td>&ensp; &ensp; &ensp; &ensp;</td>
+                </tr>
+        
+                <tr>
+                    <td>&ensp; &ensp; &ensp; &ensp;</td>
+                    <td>&ensp; &ensp; &ensp; &ensp;</td>
+                    <td>&ensp; &ensp; &ensp; &ensp;</td>
+                    <td>&ensp; &ensp; &ensp; &ensp;</td>
+                </tr>
+        
+            </table>
+
+            <br>
+
+            <a href="#">Go to top</a>
+
             <br><br>
 
 
-        </form>
-
-        <a href="#">Go to top</a>
-
-        <br><br>
-
-        <h3>Food order form</h3>
-
-        <br>
-
-        <form action="">
-
-            <label>Full name:<input type="text" name="full_name" id="full_name" placeholder="Your full name here" required></label> <br><br>
-
-            <label for="phone">Phone:</label>            
-            <input type="tel" id="phone" placeholder="Enter phone number" name="phone"
-            pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
-            required> <br><br>
-
-            <label>Address:<input type="text" name="address" id="address" placeholder="Street and number" required></label> <br><br>       
-
-            <label for="delivery-time">Choose delivery time:</label>
-                <input type="time" id="delivery-time" name="delivery-time"
-                 min="09:00" max="22:00" required>
-                <br><br>   
-            
-            <label>Your choice:<input id="food-recommendation-list" type="text" name="food-recommendation-list" list="foods" ></label><br><br>
-            <label>Extras:<input id="food-extras" type="text" name="food-extras" list="extras"></label><br><br>
-
-            <label>Contactless delivery<input type="radio" name="contactless_delivery" id="contactless_delivery" value="check"></label><br><br>            
-
-            <button>Submit order</button>
-
-            <datalist id="foods">
-
-                <option value="Raspberry pie">
-                <option value="Coconut ice cream">
-                <option value="Chocolate cake">
-                <option value="Hazelnut ice cream cup">
-                <option value="Hot cocoa">
-                <option value="Vanilla pudding">
-                <option value="Lava cake">
-
-            </datalist>
-
-            <datalist id="extras">
-
-                <option value="Chocolate syrup">
-                <option value="Strawberry syrup">
-                <option value="Caramel syrup">
-
-            </datalist>
-
-        </form>
-
-        <br>
-
-        <a href="#">Go to top</a>
-
-        <br><br>
-
-        <h1 id="css">2. CSS</h1>
-
-        <img src="./images/CSS3_logo_and_wordmark.svg.png" alt="CSS logo" height="100">
-
-        <br><br><br>
-
-        <a href="#">Go to top</a>
-
-        <br>
-
-        <h1 id="javascript">3. JavaScript</h1>
-
-        <img src="./images/1024px-Unofficial_JavaScript_logo_2.svg.png" alt="JavaScript logo" height="80">
-
-        <br>
-        <br>
+            <h2 id="forms">Forms</h2>
         
-        <a href="#">Go to top</a>
+            <h3>Search form</h3>
+
+            <br>
+
+            <h4>Search via Ecosia</h4>
+
+            <form action="https://www.ecosia.org/search" method="get">
+                <label for="q">Search:</label>
+                <input id="q" type="text" name="q">
+                <button>Go!</button>
+            </form>
+
+            <br>
+
+            <h4>Search via Google</h4>
+
+            <form action="https://www.google.com/search" method="get">
+                <label>Search:</label>
+                <input type="text" name="q">
+                <button>Go!</button>
+            </form>
+
+            <br>
+
+            <h4>Search via Yahoo!</h4>
+
+            <form action="https://uk.search.yahoo.com/search" method="get">
+                <label>Search:</label>
+                <input type="text" name="q">
+                <button>Go!</button>
+            </form>
+
+            <br><br>
+
+            <h3>Login form</h3>
+
+            <form action="">
+
+                <input type="email" name="Email" placeholder="Email" required><br>
+                <input type="password" name="Password" placeholder="Password" required><br>
+                <button type="submit">Sign in</button>
+
+            </form>
+
+            <br>
+
+            <h3>Age gate form</h3>
+
+            <form action="">
+
+                <select name="date" id="date">
+                    <option value="" disabled selected>Day</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                </select>
+
+
+                <select name="month" id="month">
+                    <option value="" disabled selected>Month</option>
+                    <option value="1">Januaryy</option>
+                    <option value="2">February</option>
+                    <option value="3">March</option>
+                    <option value="4">April</option>
+                    <option value="5">May</option>
+                    <option value="6">June</option>
+                    <option value="7">July</option>
+                    <option value="8">August</option>
+                    <option value="9">September</option>
+                    <option value="10">October</option>
+                    <option value="11">November</option>
+                    <option value="12">December</option>
+                </select>
+
+                <select name="year" id="year">
+                    <option value="" disabled selected>Year</option>
+                    <option value="2021">2021</option>
+                    <option value="2020">2020</option>
+                    <option value="2019">2019</option>
+                    <option value="2018">2018</option>
+                    <option value="2017">2017</option>
+                    <option value="2016">2016</option>
+                    <option value="2015">2015</option>
+                    <option value="2014">2014</option>
+                    <option value="2013">2013</option>
+                    <option value="2012">2012</option>
+                    <option value="2011">2011</option>
+
+                </select>
+
+                <button type="submit">Let me in!</button>
+
+            </form>
+
+            <br>
+
+            <h3>Survey form</h3>
+
+            <form action="">
+                <p>I'm good at using HTML. <br>
+                (1 - I completely agree, 5 - I completely disagree)</p>
+                <label><input type="radio" name="anwser" value="1">1</label>
+                <label><input type="radio" name="anwser" value="2">2</label>
+                <label><input type="radio" name="anwser" value="3">3</label>
+                <label><input type="radio" name="anwser" value="4">4</label>
+                <label><input type="radio" name="anwser" value="5">5</label>
+            </form>
+
+            <br>
+
+            <h3>Newsletter form</h3>
+
+            <form action="">
+                <p>Pick your newsletter topics</p>            
+                <label><input type="checkbox" name="newsletter_topic">Animals and plants</label><br>
+                <label><input type="checkbox" name="newsletter_topic">Rocks and minerals</label><br>
+                <label><input type="checkbox" name="newsletter_topic">People and places</label><br>
+                <label><input type="checkbox" name="newsletter_topic">Science and technology</label><br>
+                <label><input type="email" name="Email" placeholder="Email" required></label><br><br>
+                <button type="submit">Sign me up</button>
+                <br><br>
+
+
+            </form>
+
+            <a href="#">Go to top</a>
+
+            <br><br>
+
+            <h3>Food order form</h3>
+
+            <br>
+
+            <form action="">
+
+                <label>Full name:<input type="text" name="full_name" id="full_name" placeholder="Your full name here" required></label> <br><br>
+
+                <label for="phone">Phone:</label>            
+                <input type="tel" id="phone" placeholder="Enter phone number" name="phone"
+                pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+                required> <br><br>
+
+                <label>Address:<input type="text" name="address" id="address" placeholder="Street and number" required></label> <br><br>       
+
+                <label for="delivery-time">Choose delivery time:</label>
+                    <input type="time" id="delivery-time" name="delivery-time"
+                    min="09:00" max="22:00" required>
+                    <br><br>   
+                
+                <label>Your choice:<input id="food-recommendation-list" type="text" name="food-recommendation-list" list="foods" ></label><br><br>
+                <label>Extras:<input id="food-extras" type="text" name="food-extras" list="extras"></label><br><br>
+
+                <label>Contactless delivery<input type="radio" name="contactless_delivery" id="contactless_delivery" value="check"></label><br><br>            
+
+                <button>Submit order</button>
+
+                <datalist id="foods">
+
+                    <option value="Raspberry pie">
+                    <option value="Coconut ice cream">
+                    <option value="Chocolate cake">
+                    <option value="Hazelnut ice cream cup">
+                    <option value="Hot cocoa">
+                    <option value="Vanilla pudding">
+                    <option value="Lava cake">
+
+                </datalist>
+
+                <datalist id="extras">
+
+                    <option value="Chocolate syrup">
+                    <option value="Strawberry syrup">
+                    <option value="Caramel syrup">
+
+                </datalist>
+
+            </form>
+
+            <br>
+
+            <a href="#">Go to top</a>
+
+            <br><br>
+
+            <h1 id="css">2. CSS</h1>
+
+            <img src="./images/CSS3_logo_and_wordmark.svg.png" alt="CSS logo" height="100">
+
+            <br><br><br>
+
+            <a href="#">Go to top</a>
+
+            <br>
+
+            <h1 id="javascript">3. JavaScript</h1>
+
+            <img src="./images/1024px-Unofficial_JavaScript_logo_2.svg.png" alt="JavaScript logo" height="80">
+
+            <br>
+            <br>
+            
+            <a href="#">Go to top</a>
+
+        </div>
 
 
         <script src="prism.js"></script>

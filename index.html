@@ -9,13 +9,15 @@
         <meta name="author" content="Aleta Bukvić">
         <meta name="description" content="This is my frontend cheat sheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="<link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">"
         <style>
             body {
                 background-color: darkseagreen;
                 font-family:'Montserrat', sans-serif;
+                font-weight: bold;
+                color: darkslategray;
             }
 
             h1 {
@@ -28,10 +30,26 @@
                 text-shadow: 2px 2px darkslategray;
             }
 
-            table {
+            table, th, td {
                 border-color: lightgoldenrodyellow;
-                border-width: 2,2,2,2;
+                border-width: 1,1,1,1;
                 border-style: inset;                
+            }
+
+            a:link {
+                color: darkslategray;
+            }
+
+            a:visited {
+                color: forestgreen;
+            }
+
+            div.sticky {
+                position: -webkit-sticky;
+                position: sticky;
+                top: 0;                
+                padding: 20px;
+                font-size: 20px;
             }
             
         </style>
@@ -54,26 +72,36 @@
         <a href="./cookbook-example/apple-pie.html">Cookbook</a>
 
         <br><br>
-        
-        <h1 style="text-align: center;">
-            My frontend cheat sheet
-        </h1>
 
-        <div>
-            <img 
-                src="https://user-images.githubusercontent.com/71838352/139461087-ab8f2ecf-135b-4e4f-8df6-17ef346be5d1.png"
-                alt="Baby Kurama"
-                style="display: block; margin: 0 auto"
-            />
+        <div class="sticky">
+        
+            <h1 style="text-align: center;">
+                My frontend cheat sheet
+            </h1>
+
+            <div>
+                <img 
+                    src="https://user-images.githubusercontent.com/71838352/139461087-ab8f2ecf-135b-4e4f-8df6-17ef346be5d1.png"
+                    alt="Baby Kurama"
+                    style="display: block; margin: 0 auto"
+                />
+            </div>
         </div>
 
         <p style="text-align: center;">
             (I will fill it in as we learn new things!)
         </p>
 
-        <p style="text-align: center; font-size: medium;">Visit my <a href="https://github.com/aletta-bookwitch" target="_blank">GitHub profile</a>.</p>
+        <p style="text-align: center; font-size: medium;">
+            Visit my <a href="https://github.com/aletta-bookwitch" target="_blank">GitHub profile</a>.
+        </p>
+        
+        <br>
+
+        
+
                 
-        <ol>
+        <ol  style="text-align: center;";>
             <li><a href="#html">HTML</a></li>
             <li><a href="#inline-text">Inline text</a></li>
             <li><a href="#lists-section">Lists</a></li>

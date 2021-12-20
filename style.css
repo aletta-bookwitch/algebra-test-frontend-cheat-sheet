@@ -2,7 +2,36 @@ body {
     background-color: darkseagreen;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
+    text-align: justify;
+    line-height: 1.5;
+    word-spacing: 7px;
+    white-space: wrap;
     color: darkslategray;
+    margin: auto;
+
+}
+
+#menu-box {
+    background-color: rgb(30, 69, 52);
+    color: white;   
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    display: flex;   
+    justify-content:center;
+    justify-content: space-around;
+    padding: 1rem;
+    margin: 0;
+}
+
+#menu {
+    color: white;
+    text-decoration: none;
+    text-shadow: 1px 2px rgb(29, 29, 29);
+}
+
+#menu:visited {
+    color: darkseagreen;
 }
 
 h1 {
@@ -21,12 +50,17 @@ table, th, td {
     border-style: inset;                
 }
 
-a:link {
-    color: darkslategray;
+a:link:not(.menu) {
+    color: darkslategray;    
+    text-shadow: white, 2px 2px 2px;
 }
 
 a:visited {
-    color: forestgreen;
+    color: darkslategray;
+}
+
+.menu > a {
+    color: darkseagreen;
 }
 
 div.sticky {
@@ -37,13 +71,6 @@ div.sticky {
     font-size: 20px;
 }
 
-.wrapper {
-    width: 100%;
-    max-width: 1024px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-:not(pre)>code[class=language-], pre[class*=language-] {
+pre[class*=language-] {
     background-color: lightyellow;
 }
